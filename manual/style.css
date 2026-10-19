@@ -1,0 +1,282 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+:root {
+  --verde: #246b45;
+  --verde-escuro: #17452e;
+  --verde-claro: #e8f5ec;
+  --fundo: #f6f9f6;
+  --texto: #25352b;
+  --cinza: #66756a;
+  --branco: #ffffff;
+  --borda: #dce8de;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--verde);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  background: var(--branco);
+  border-bottom: 1px solid var(--borda);
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.marca {
+  color: var(--verde-escuro);
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--texto);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ===== APRESENTAÇÃO ===== */
+.hero {
+  padding: 85px 7%;
+  background: linear-gradient(135deg, #e8f5ec, #f8fcf8);
+}
+
+.hero h1 {
+  max-width: 800px;
+  margin: 16px 0;
+  color: var(--verde-escuro);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.15;
+}
+
+.hero p {
+  max-width: 700px;
+  color: var(--cinza);
+  font-size: 1.1rem;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 5px 13px;
+  background: #d5eddd;
+  color: var(--verde-escuro);
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: var(--verde);
+  color: white;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.botao:hover {
+  background: var(--verde-escuro);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* ===== SEÇÕES ===== */
+.secao {
+  padding: 60px 7%;
+  scroll-margin-top: 80px;
+}
+
+.secao h2 {
+  color: var(--verde-escuro);
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.secao h3 {
+  color: var(--verde);
+  margin-bottom: 8px;
+}
+
+.secao > p {
+  max-width: 850px;
+}
+
+.numero {
+  color: var(--verde);
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.fundo {
+  background: #edf5ef;
+}
+
+/* ===== CARTÕES ===== */
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.cartao {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 15px;
+  padding: 24px;
+  box-shadow: 0 5px 18px rgba(30, 70, 45, 0.05);
+}
+
+.cartao h3 {
+  margin-top: 8px;
+}
+
+.icone {
+  font-size: 1.8rem;
+}
+
+/* ===== LISTAS ===== */
+.lista {
+  padding-left: 24px;
+}
+
+.lista li {
+  padding: 5px 0;
+}
+
+.tecnologia {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  padding: 7px 13px;
+  border: 1px solid var(--borda);
+  border-radius: 7px;
+  background: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* ===== CÓDIGO E AVISOS ===== */
+pre {
+  overflow-x: auto;
+  padding: 20px;
+  background: #1e3025;
+  color: #e5f5e9;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+code {
+  padding: 2px 5px;
+  background: #e5eee7;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  overflow-wrap: anywhere;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.aviso {
+  margin: 22px 0;
+  padding: 18px 22px;
+  background: #fff8df;
+  border-left: 5px solid #d9a52e;
+  border-radius: 7px;
+}
+
+.contato {
+  background: var(--verde-escuro);
+  color: white;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.contato h2,
+.contato h3 {
+  color: white;
+}
+
+.pequeno {
+  color: var(--cinza);
+  font-size: 0.9rem;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  padding: 28px 7%;
+  background: #142d20;
+  color: #dce9df;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ===== CELULARES ===== */
+@media (max-width: 650px) {
+  .cabecalho {
+    padding: 15px 5%;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    padding: 55px 5%;
+  }
+
+  .secao {
+    padding: 42px 5%;
+  }
+
+  .secao h2 {
+    font-size: 1.65rem;
+  }
+
+  .cartoes {
+    grid-template-columns: 1fr;
+  }
+}

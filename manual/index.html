@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manual técnico do projeto PlantCare, sistema de gerenciamento e cuidados com plantas.">
+  <title>PlantCare | Manual Técnico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <a href="#inicio" class="marca">🌿 PlantCare</a>
+
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#instalacao">Instalação</a>
+      <a href="#banco">Banco de dados</a>
+      <a href="#manutencao">Manutenção</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <span class="etiqueta">MANUAL TÉCNICO DO PROJETO</span>
+
+      <h1>Cuide melhor das suas plantas com o PlantCare.</h1>
+
+      <p>
+        Este manual apresenta o projeto PlantCare, suas funcionalidades,
+        tecnologias utilizadas, instalação e orientações para manutenção
+        e evolução do sistema.
+      </p>
+
+      <a href="#sobre" class="botao">Conhecer o projeto</a>
+    </section>
+
+    <section class="secao" id="sobre">
+      <span class="numero">01 — APRESENTAÇÃO</span>
+      <h2>Sobre o PlantCare</h2>
+
+      <p>
+        O PlantCare é um aplicativo desenvolvido para ajudar no gerenciamento
+        dos cuidados com plantas. A proposta é organizar informações importantes
+        e facilitar o acompanhamento da rotina de manutenção de cada planta.
+      </p>
+
+      <p>
+        O sistema permite cadastrar plantas, consultar suas informações,
+        atualizar registros e acompanhar os cuidados necessários.
+      </p>
+
+      <div class="aviso">
+        <strong>Objetivo:</strong>
+        facilitar a organização dos cuidados com plantas, reunindo em um só
+        lugar informações sobre rega, iluminação e fertilização.
+      </div>
+
+      <h3>Público-alvo</h3>
+      <p>
+        Pessoas que possuem plantas em casa, estudantes e usuários que desejam
+        organizar melhor os cuidados com suas plantas.
+      </p>
+    </section>
+
+    <section class="secao fundo" id="funcionalidades">
+      <span class="numero">02 — RECURSOS</span>
+      <h2>Funcionalidades do sistema</h2>
+
+      <p>
+        O aplicativo reúne recursos para registrar plantas e acompanhar
+        os cuidados realizados.
+      </p>
+
+      <div class="cartoes">
+        <article class="cartao">
+          <div class="icone">🔐</div>
+          <h3>Autenticação</h3>
+          <p>
+            Permite criar uma conta e acessar o sistema com autenticação
+            de usuário.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">🪴</div>
+          <h3>Cadastro de plantas</h3>
+          <p>
+            Registra informações como nome, espécie, iluminação e intervalo
+            entre regas.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">💧</div>
+          <h3>Controle de rega</h3>
+          <p>
+            Permite registrar a rega e acompanhar quando a próxima rega
+            está prevista.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">🌱</div>
+          <h3>Fertilização</h3>
+          <p>
+            Armazena registros de fertilização e permite acompanhar
+            a frequência desse cuidado.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">📋</div>
+          <h3>Histórico de cuidados</h3>
+          <p>
+            Organiza os registros de regas e fertilizações realizados
+            para as plantas.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">☁️</div>
+          <h3>Banco de dados</h3>
+          <p>
+            Utiliza o Firebase para autenticação e armazenamento das
+            informações do usuário.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="tecnologias">
+      <span class="numero">03 — DESENVOLVIMENTO</span>
+      <h2>Tecnologias utilizadas</h2>
+
+      <p>
+        O projeto utiliza as tecnologias abaixo para desenvolver a aplicação
+        e armazenar seus dados.
+      </p>
+
+      <div>
+        <span class="tecnologia">Dart</span>
+        <span class="tecnologia">Flutter</span>
+        <span class="tecnologia">Firebase Authentication</span>
+        <span class="tecnologia">Cloud Firestore</span>
+        <span class="tecnologia">HTML5</span>
+        <span class="tecnologia">CSS3</span>
+        <span class="tecnologia">Visual Studio Code</span>
+      </div>
+
+      <div class="cartoes">
+        <article class="cartao">
+          <h3>Dart e Flutter</h3>
+          <p>
+            Dart é a linguagem de programação utilizada no aplicativo.
+            Flutter fornece os componentes para construir a interface.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <h3>Firebase Authentication</h3>
+          <p>
+            Gerencia a autenticação dos usuários, incluindo o acesso
+            por e-mail e senha.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <h3>Cloud Firestore</h3>
+          <p>
+            Banco de dados utilizado para armazenar as informações
+            das plantas e os registros de cuidados.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <h3>HTML e CSS</h3>
+          <p>
+            Tecnologias utilizadas para criar e estilizar este manual técnico.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao fundo" id="requisitos">
+      <span class="numero">04 — PREPARAÇÃO</span>
+      <h2>Requisitos do sistema</h2>
+
+      <p>Para executar e modificar o projeto, são necessários:</p>
+
+      <ul class="lista">
+        <li>Computador com Windows, macOS ou Linux compatível com Flutter.</li>
+        <li>Visual Studio Code.</li>
+        <li>Flutter SDK e Dart SDK configurados.</li>
+        <li>Dependências do projeto instaladas.</li>
+        <li>Acesso à internet para os serviços Firebase.</li>
+        <li>Projeto Firebase configurado para a plataforma utilizada.</li>
+      </ul>
+
+      <h3>Ferramentas adicionais</h3>
+      <p>
+        Para executar o aplicativo em um dispositivo Android, também é necessário
+        configurar as ferramentas do Android SDK e um dispositivo físico ou
+        emulador compatível.
+      </p>
+    </section>
+
+    <section class="secao" id="instalacao">
+      <span class="numero">05 — INSTALAÇÃO</span>
+      <h2>Como instalar e executar</h2>
+
+      <h3>1. Abrir o projeto</h3>
+      <p>
+        Abra o Visual Studio Code e carregue a pasta raiz do projeto PlantCare.
+      </p>
+
+      <h3>2. Instalar as dependências</h3>
+      <p>
+        Abra o terminal integrado do VS Code, na pasta do projeto, e execute:
+      </p>
+
+      <pre><code>flutter pub get</code></pre>
+
+      <h3>3. Verificar a configuração</h3>
+      <p>Para verificar o ambiente de desenvolvimento, execute:</p>
+
+      <pre><code>flutter doctor</code></pre>
+
+      <h3>4. Executar o aplicativo</h3>
+      <p>Com um dispositivo ou emulador disponível, execute:</p>
+
+      <pre><code>flutter run</code></pre>
+
+      <div class="aviso">
+        <strong>Importante:</strong>
+        antes de executar o aplicativo, confira se a configuração do Firebase
+        corresponde à plataforma escolhida. A configuração para Android não
+        garante, sozinha, que o aplicativo funcionará na Web.
+      </div>
+    </section>
+
+    <section class="secao fundo" id="banco">
+      <span class="numero">06 — ARMAZENAMENTO</span>
+      <h2>Estrutura do banco de dados</h2>
+
+      <p>
+        O Cloud Firestore organiza os dados em coleções e documentos.
+        Neste projeto, as plantas de cada usuário ficam associadas à sua
+        identificação de autenticação.
+      </p>
+
+      <pre><code>usuarios/
+  {uid}/
+    plantas/
+      {plantaId}/
+        nome
+        especie
+        fotoUrl
+        intervaloRegaDias
+        ultimaRega
+        iluminacao
+        frequenciaFertilizacaoDias
+        ultimaFertilizacao
+
+        historico_regas/
+          {registroId}
+
+        historico_fertilizacoes/
+          {registroId}</code></pre>
+
+      <h3>Descrição dos campos</h3>
+
+      <ul class="lista">
+        <li><strong>nome:</strong> nome dado à planta.</li>
+        <li><strong>especie:</strong> espécie da planta.</li>
+        <li><strong>fotoUrl:</strong> endereço da imagem, quando utilizado.</li>
+        <li><strong>intervaloRegaDias:</strong> intervalo previsto entre regas, em dias.</li>
+        <li><strong>ultimaRega:</strong> data da última rega.</li>
+        <li><strong>iluminacao:</strong> condição de iluminação indicada para a planta.</li>
+        <li><strong>frequenciaFertilizacaoDias:</strong> intervalo previsto entre fertilizações.</li>
+        <li><strong>ultimaFertilizacao:</strong> data da última fertilização.</li>
+      </ul>
+
+      <div class="aviso">
+        Os históricos são armazenados em subcoleções. Os campos efetivamente
+        gravados em cada registro dependem da implementação do aplicativo.
+      </div>
+
+      <h3>Segurança dos dados</h3>
+      <p>
+        As regras do Firestore devem restringir a leitura e a escrita aos
+        usuários autenticados e aos respectivos dados. As regras publicadas
+        devem ser revisadas sempre que a estrutura do banco for modificada.
+      </p>
+    </section>
+
+    <section class="secao" id="telas">
+      <span class="numero">07 — INTERFACE</span>
+      <h2>Principais telas</h2>
+
+      <div class="cartoes">
+        <article class="cartao">
+          <div class="icone">🔑</div>
+          <h3>Login</h3>
+          <p>
+            Tela de acesso para usuários que já possuem uma conta.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">📝</div>
+          <h3>Cadastro de conta</h3>
+          <p>
+            Formulário para criação de uma nova conta de usuário.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">🌿</div>
+          <h3>Tela inicial</h3>
+          <p>
+            Apresenta a lista de plantas e informações resumidas
+            sobre os cuidados.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">✏️</div>
+          <h3>Formulário da planta</h3>
+          <p>
+            Utilizado para cadastrar uma planta ou editar seus dados.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">📖</div>
+          <h3>Detalhes da planta</h3>
+          <p>
+            Apresenta informações da planta e permite registrar
+            cuidados realizados.
+          </p>
+        </article>
+      </div>
+
+      <div class="aviso">
+        <strong>Capturas de tela:</strong>
+        adicione imagens reais do aplicativo à pasta
+        <code>manual/imagens/</code> e insira-as nesta seção para documentar
+        visualmente as telas.
+      </div>
+    </section>
+
+    <section class="secao fundo" id="crud">
+      <span class="numero">08 — OPERAÇÕES</span>
+      <h2>Como utilizar o sistema</h2>
+
+      <h3>Cadastrar uma planta</h3>
+      <ol class="lista">
+        <li>Entre no aplicativo com sua conta.</li>
+        <li>Acesse a tela inicial.</li>
+        <li>Abra o formulário de cadastro.</li>
+        <li>Preencha os dados solicitados.</li>
+        <li>Salve o cadastro e confira se a planta aparece na lista.</li>
+      </ol>
+
+      <h3>Consultar uma planta</h3>
+      <ol class="lista">
+        <li>Localize a planta na lista principal.</li>
+        <li>Abra os detalhes para consultar suas informações.</li>
+      </ol>
+
+      <h3>Editar uma planta</h3>
+      <ol class="lista">
+        <li>Abra os detalhes da planta.</li>
+        <li>Selecione a opção de edição.</li>
+        <li>Altere os campos necessários e salve.</li>
+      </ol>
+
+      <h3>Excluir uma planta</h3>
+      <ol class="lista">
+        <li>Abra os detalhes da planta.</li>
+        <li>Selecione a opção de exclusão.</li>
+        <li>Confira a confirmação antes de concluir.</li>
+      </ol>
+
+      <h3>Registrar cuidados</h3>
+      <p>
+        Na tela de detalhes, utilize as opções de registrar rega ou fertilização
+        para atualizar a data do cuidado e armazenar o respectivo histórico,
+        conforme a implementação do aplicativo.
+      </p>
+    </section>
+
+    <section class="secao" id="manutencao">
+      <span class="numero">09 — MANUTENÇÃO</span>
+      <h2>Como modificar o projeto</h2>
+
+      <h3>Alterar as cores</h3>
+      <p>
+        Localize o arquivo responsável pelo tema visual do aplicativo e
+        modifique as cores utilizadas pela interface. O caminho exato deve
+        ser confirmado na estrutura atual do projeto.
+      </p>
+
+      <h3>Alterar o nome do aplicativo</h3>
+      <p>
+        Verifique o nome configurado no código e as configurações específicas
+        de cada plataforma. A alteração do título dentro do Flutter não muda,
+        necessariamente, o nome exibido pelo sistema operacional.
+      </p>
+
+      <h3>Adicionar uma tela</h3>
+      <ol class="lista">
+        <li>Crie o arquivo da tela na pasta apropriada do projeto.</li>
+        <li>Implemente a interface e os comportamentos necessários.</li>
+        <li>Configure a navegação a partir da tela que utilizará o novo recurso.</li>
+        <li>Execute e teste o aplicativo.</li>
+      </ol>
+
+      <h3>Adicionar um campo ao cadastro</h3>
+      <ol class="lista">
+        <li>Adicione o campo ao modelo da planta.</li>
+        <li>Atualize os métodos de conversão para mapa e de leitura do Firestore.</li>
+        <li>Inclua o campo no formulário, com a validação necessária.</li>
+        <li>Confira as telas de detalhes e edição.</li>
+        <li>Teste a leitura e a gravação dos dados.</li>
+      </ol>
+
+      <h3>Gerar uma versão Android</h3>
+      <p>Para gerar um APK de lançamento, execute no terminal:</p>
+
+      <pre><code>flutter build apk --release</code></pre>
+
+      <p>
+        O arquivo costuma ser gerado em
+        <code>build/app/outputs/flutter-apk/app-release.apk</code>.
+        Confira a saída do terminal para confirmar se a compilação terminou
+        com sucesso.
+      </p>
+    </section>
+
+    <section class="secao fundo" id="problemas">
+      <span class="numero">10 — SOLUÇÃO DE PROBLEMAS</span>
+      <h2>Problemas comuns</h2>
+
+      <div class="cartoes">
+        <article class="cartao">
+          <h3>Dependências com erro</h3>
+          <p>
+            Execute <code>flutter pub get</code> no diretório raiz do projeto
+            e confira as mensagens do terminal.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <h3>Aplicativo não inicia</h3>
+          <p>
+            Execute <code>flutter doctor</code>, confira o dispositivo
+            selecionado e leia a mensagem completa de erro.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <h3>Erro de conexão com Firebase</h3>
+          <p>
+            Confira a configuração da plataforma, a inicialização do Firebase,
+            a autenticação e as regras do Firestore.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <h3>Dados não aparecem</h3>
+          <p>
+            Verifique se o usuário está autenticado, se o caminho dos documentos
+            está correto e se as regras permitem a operação.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="desenvolvedor">
+      <div class="contato">
+        <h2>Projeto PlantCare</h2>
+        <p>
+          Aplicativo de gerenciamento de plantas desenvolvido como projeto
+          acadêmico.
+        </p>
+        <p><strong>Desenvolvedor:</strong> [Preencha com seu nome]</p>
+        <p><strong>Turma:</strong> [Preencha com sua turma]</p>
+        <p><strong>Instituição:</strong> [Preencha com o nome da instituição]</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>PlantCare — Manual técnico do projeto</p>
+    <p class="pequeno">
+      Documentação sujeita a atualizações conforme a evolução do aplicativo.
+    </p>
+  </footer>
+
+</body>
+</html>
